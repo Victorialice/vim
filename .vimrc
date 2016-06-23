@@ -4,7 +4,9 @@ filetype off
 syntax enable
 syntax on
 set nu
+set nobackup
 
+set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
