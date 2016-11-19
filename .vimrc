@@ -10,9 +10,11 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set timeout timeoutlen=3000 ttimeoutlen=100 "fix lag bug when use 'O' to insert a new line
 
-"set guifont = Aix:h18
-"syntax on
+"set smartindent
+"set autoindent
+
 set t_Co=256
 colorscheme monokai
 
@@ -23,9 +25,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'The-NERD-tree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
-
+Plugin 'mattn/emmet-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'crusoexia/vim-monokai'
+"Plugin 'matchit.zip'
+Plugin 'valloric/MatchTagAlways'
 
 call vundle#end()
 filetype plugin indent on
@@ -40,3 +45,4 @@ nmap <s-tab> <v
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+set foldmethod=indent
